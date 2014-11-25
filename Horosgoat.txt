@@ -1,6 +1,6 @@
 Registratie: twitter + geboortedatum
 Algoritme om "random" berichten te genereren. max +- 120 tekens (twitter = 140)
-Berichten komen in gelukskoekjes die uitgedeeld worden met Chinees nieuwjaar
+Berichten komen in gelukskoekjes die uitgedeeld worden met Chinees nieuwjaar ( of iets vroeger op barcamp/hoboken)
 Enkel voor studenten MCT (voorlopig)
 Deelnemende studenten krijgen random koekje/bericht
 Zij tweeten dit naar de betreffende student.
