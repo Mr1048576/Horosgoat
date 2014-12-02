@@ -4,3 +4,8 @@ Berichten komen in gelukskoekjes die uitgedeeld worden met Chinees nieuwjaar ( o
 Enkel voor studenten MCT (voorlopig)
 Deelnemende studenten krijgen random koekje/bericht
 Zij tweeten dit naar de betreffende student.
+
+
+
+NodeJS zal gebruikt worden
+MongoDB eventueel
