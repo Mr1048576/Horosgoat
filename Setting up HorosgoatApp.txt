@@ -1,0 +1,9 @@
+Zet de app op de juiste plaats (waar je andere laravelprojecten ook werken)
+
+Set up database: name = 'horosgoat'
+Edit 'Homestead.yaml':
+	- map: horosgoat.app
+      	  to: /home/vagrant/Code/HorosgoatApp/public	
+//zo staat het bij mij, weet niet of het bij jouw ook zo moet
+
+run cmd: 'php artisan migrate' in correcte directory (Ik neem aan dat je weet waar dat is?)
