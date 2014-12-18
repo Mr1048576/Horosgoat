@@ -9,3 +9,15 @@ Zij tweeten dit naar de betreffende student.
 
 NodeJS zal gebruikt worden
 MongoDB eventueel
+
+Logo: met geit
+Website background met hoefjes, hoorntjes, en/of lantaarns
+
+
+Todo tegen volgende keer:
+NodeJS, Mustache => hoe werkt deze shizzle
+
+Na week 4/5 => teruggevallen op laravel
+Werkend prototype (=zonder front-end)
+
+To do: front-end & back-end samenbrengen
