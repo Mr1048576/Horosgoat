@@ -15,7 +15,7 @@ class GoatController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make("main.index");
+		return View::make("main.index", ["currentdate" => date("d")]);
 	}
 
 
@@ -40,7 +40,58 @@ class GoatController extends \BaseController {
 		$input = Input::all();
 
 		if($this->user->fill($input)->isValid()){
-			$this->user->dateofbirth = Input::get("dateofbirth");
+			$testdate = Input::get("dateofbirth");
+			$validdash = ["-"];
+
+			if(!ctype_alnum(str_replace($validdash, "", $testdate))){
+				$testdate = substr($testdate, 4);
+				$day = substr($testdate, 4, 2);
+				$month = substr($testdate, 0, 3);
+				$year = substr($testdate, -4, 4);
+				switch($month){
+					case "Jan":
+						$month = "01";
+						break;
+					case "Feb":
+						$month = "02";
+						break;
+					case "Mar":
+						$month = "03";
+						break;
+					case "Apr":
+						$month = "04";
+						break;
+					case "May":
+						$month = "05";
+						break;
+					case "Jun":
+						$month = "06";
+						break;
+					case "Jul":
+						$month = "07";
+						break;
+					case "Aug":
+						$month = "08";
+						break;
+					case "Sep":
+						$month = "09";
+						break;
+					case "Oct":
+						$month = "10";
+						break;
+					case "Nov":
+						$month = "11";
+						break;
+					case "Dec":
+						$month = "12";
+						break;
+				}
+				$testdate = $year . "-" . $month . "-" . $day;
+				$this->user->dateofbirth = $testdate;
+			}else{
+				$this->user->dateofbirth = Input::get("dateofbirth");
+			}
+			
 			$this->user->save();
 
 			return View::make("main.show", ["twittername" => $this->user->twittername]);
