@@ -24,23 +24,21 @@
 		</div>
 		
 		<div class="givecookie">
-			<button class="button">Give me my cookie!</button>
+			<button class="button submit">Give me my cookie!</button>
 		</div>
 		
 	</div>
 
 	<div class="main" id="second">
-		@if($currentdate >= 10)
+		@if($currentdate < 10)
 			{{ Form::open(["route" => "store"]) }}
 
 			<div class="twitterdiv">
-				<!-- {{ Form::label("twitter", "Twittername:") }} -->
 				{{ Form::text("twittername", "", ["placeholder" => "@twitter_name", "class" => "input twitterinput bold"]) }}
 				{{ $errors->first("twitter") }}
 			</div>
 
 			<div class="datediv">
-				<!-- {{ Form::label("dateofbirth", "Date of birth:")}} -->
 				{{ Form::input("date", "dateofbirth", null, ["placeholder" => "Select date of birth", "class" => "input dateinput bold", "id" => "date"]) }}
 				{{ $errors->first("dateofbirth") }}
 			</div>
