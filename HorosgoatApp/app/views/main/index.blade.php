@@ -30,7 +30,7 @@
 	</div>
 
 	<div class="main" id="second">
-		@if($currentdate < 10)
+		@if($currentdate <= 10)
 			{{ Form::open(["route" => "store"]) }}
 
 			<div class="twitterdiv">
