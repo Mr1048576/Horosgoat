@@ -8082,7 +8082,7 @@ html {
 
 /* line 57, ../scss/main.scss */
 #second {
-  display: none;
+  /*display: none;*/
   background: #fffdf9 url(../img/goats1.jpg) no-repeat center top;
 }
 
