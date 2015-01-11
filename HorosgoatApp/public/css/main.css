@@ -8129,15 +8129,15 @@ span {
 
 /* line 95, ../scss/main.scss */
 .button, .submit {
-  font-size: 28px;
+  font-size: 24px;
   color: #fffdf9;
   background-color: #13a89e;
   border: 0;
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: bold;
-  width: 360px;
-  height: 76px;
+  width: 330px;
+  height: 60px;
   font-family: "opensansbold";
 }
 
@@ -8161,20 +8161,25 @@ span {
 
 /* line 123, ../scss/main.scss */
 .text {
-  padding-top: 8vh;
   padding-left: 5%;
   padding-right: 5%;
 }
 
 /* line 129, ../scss/main.scss */
 .logo {
-  margin-top: 2em;
+ margin-top: 1em;
 }
 
 /* line 133, ../scss/main.scss */
 .givecookie {
-  margin-top: .6em;
+  padding-top: 2vh;
 }
+
+.firsttext {
+  padding-top: 4vh;
+}
+
+
 
 /* line 137, ../scss/main.scss */
 .twitterdiv {
@@ -8183,7 +8188,7 @@ span {
 
 /* line 141, ../scss/main.scss */
 .congratstext {
-  padding-top: 20vh;
+  padding-top: 18vh;
 }
 /* line 143, ../scss/main.scss */
 .congratstext p {
@@ -8204,7 +8209,7 @@ h2 {
   font-size: 60px;
   font-weight: 700;
   line-height: 40px;
-  margin-top: 24vh;
+  margin-top: 18vh;
 }
 
 /* line 164, ../scss/main.scss */
@@ -8229,10 +8234,9 @@ h2 {
 /* line 181, ../scss/main.scss */
 .error {
   font-family: "opensansbold";
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 16px;
+  line-height: 24px;
   margin: 0 auto;
-  text-shadow: 1px 1px 1px #363636;
 }
 
 @media (max-width: 767px) {
