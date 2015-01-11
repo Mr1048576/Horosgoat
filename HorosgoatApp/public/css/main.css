@@ -8033,24 +8033,6 @@ button.close {
     display: none !important;
   }
 }
-/* line 4, ../scss/main.scss */
-#rightleft {
-  background-color: #335989;
-  min-height: 100vh;
-}
-
-/* line 9, ../scss/main.scss */
-#header {
-  background: #335a89;
-  background: -moz-linear-gradient(left, #335a89 0%, #335a89 48%, white 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, #335a89), color-stop(48%, #335a89), color-stop(100%, white));
-  background: -webkit-linear-gradient(left, #335a89 0%, #335a89 48%, white 100%);
-  background: -o-linear-gradient(left, #335a89 0%, #335a89 48%, white 100%);
-  background: -ms-linear-gradient(left, #335a89 0%, #335a89 48%, white 100%);
-  background: linear-gradient(to right, #335a89 0%, #335a89 48%, #ffffff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#335a89', endColorstr='#ffffff', GradientType=1 );
-}
-
 @font-face {
   font-family: "opensans";
   src: url(../fonts/OpenSans-SemiBold.ttf);
@@ -8061,62 +8043,73 @@ button.close {
   src: url(../fonts/OpenSans-Bold.ttf);
 }
 
-/* line 38, ../scss/main.scss */
+/* line 22, ../scss/main.scss */
 html, body {
   font-family: "opensans", "Open Sans";
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 32px;
 }
 
-/* line 46, ../scss/main.scss */
+/* line 30, ../scss/main.scss */
 html {
   overflow-y: scroll;
 }
 
-/* line 50, ../scss/main.scss */
+/* line 34, ../scss/main.scss */
 #first {
   color: #363636;
+  height: 100vh;
 }
 
-/* line 57, ../scss/main.scss */
+/* line 39, ../scss/main.scss */
 #second {
-  /*display: none;*/
-  background: #fffdf9 url(../img/goats1.jpg) no-repeat center top;
+  background: #fffdf9 url(../img/goats2.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
 }
 
-/* line 62, ../scss/main.scss */
+/* line 48, ../scss/main.scss */
 span {
   text-transform: uppercase;
 }
 
-/* line 66, ../scss/main.scss */
+/* line 52, ../scss/main.scss */
 .bold {
   font-family: "opensansbold";
 }
 
-/* line 70, ../scss/main.scss */
+/* line 56, ../scss/main.scss */
 .red {
   color: #e74c30;
 }
 
-/* line 74, ../scss/main.scss */
+/* line 60, ../scss/main.scss */
 .blue {
   color: #13a89e;
 }
 
-/* line 78, ../scss/main.scss */
+/* line 64, ../scss/main.scss */
 .yellow {
   color: #f6cb51;
 }
 
-/* line 83, ../scss/main.scss */
-.cookies img {
-  max-width: 100%;
+/* line 68, ../scss/main.scss */
+.white {
+  color: #fffdf9;
 }
 
-/* line 88, ../scss/main.scss */
+/* line 73, ../scss/main.scss */
+.cookies img {
+  max-width: 100%;
+  height: 42vh;
+}
+
+/* line 79, ../scss/main.scss */
 .input {
   border-radius: 5px;
   width: 406px;
@@ -8127,66 +8120,72 @@ span {
   max-width: 90%;
 }
 
-/* line 98, ../scss/main.scss */
+/* line 89, ../scss/main.scss */
 .twitterinput, .dateinput {
   color: #3f4953;
   background-color: #f2e7da;
   padding-left: 1.8em;
 }
 
-/* line 104, ../scss/main.scss */
+/* line 95, ../scss/main.scss */
 .button, .submit {
+  font-size: 28px;
   color: #fffdf9;
   background-color: #13a89e;
   border: 0;
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: bold;
-  width: 406px;
-  height: 82px;
+  width: 360px;
+  height: 76px;
   font-family: "opensansbold";
 }
 
-/* line 116, ../scss/main.scss */
+/* line 108, ../scss/main.scss */
+.submit {
+  width: 406px;
+  height: 82px;
+}
+
+/* line 113, ../scss/main.scss */
 .submit {
   font-size: 28px;
   max-width: 90%;
 }
 
-/* line 121, ../scss/main.scss */
+/* line 118, ../scss/main.scss */
 .button:hover, .submit:hover {
   color: #363636;
   background-color: #f6cb51;
 }
 
-/* line 126, ../scss/main.scss */
+/* line 123, ../scss/main.scss */
 .text {
-  margin-top: 3em;
+  padding-top: 8vh;
   padding-left: 5%;
   padding-right: 5%;
 }
 
-/* line 132, ../scss/main.scss */
+/* line 129, ../scss/main.scss */
 .logo {
   margin-top: 2em;
 }
 
-/* line 136, ../scss/main.scss */
+/* line 133, ../scss/main.scss */
 .givecookie {
-  margin-top: .2em;
+  margin-top: .6em;
 }
 
-/* line 140, ../scss/main.scss */
+/* line 137, ../scss/main.scss */
 .twitterdiv {
-  padding-top: 14em;
+  padding-top: 36vh;
 }
 
-/* line 144, ../scss/main.scss */
-.submitdiv {
-  padding-bottom: 12em;
+/* line 141, ../scss/main.scss */
+.congratstext {
+  padding-top: 20vh;
 }
-
-/* line 149, ../scss/main.scss */
+/* line 143, ../scss/main.scss */
 .congratstext p {
   color: #f2e7da;
   font-size: 30px;
@@ -8197,12 +8196,7 @@ span {
   margin-right: auto;
 }
 
-/* line 160, ../scss/main.scss */
-.congratstext {
-  margin-top: 8em;
-}
-
-/* line 164, ../scss/main.scss */
+/* line 154, ../scss/main.scss */
 h2 {
   font-family: "opensansbold";
   text-transform: uppercase;
@@ -8213,58 +8207,123 @@ h2 {
   margin-top: 24vh;
 }
 
-/* line 174, ../scss/main.scss */
+/* line 164, ../scss/main.scss */
 .congrats {
-  background: #363636 url(../img/lastbg.jpg) no-repeat center top;
-}
-
-/* line 178, ../scss/main.scss */
-.toolate {
-  padding-top: 40vh;
-  margin-top: 0em;
+  background: #363636 url(../img/lastbg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100vh;
 }
 
+/* line 173, ../scss/main.scss */
+.toolate {
+  color: #fffdf9;
+  font-size: 50px;
+  line-height: 80px;
+  padding-top: 40vh;
+  height: 100vh;
+}
+
+/* line 181, ../scss/main.scss */
+.error {
+  font-family: "opensansbold";
+  font-size: 32px;
+  line-height: 36px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 1px #363636;
+}
+
 @media (max-width: 767px) {
-  /* line 185, ../scss/main.scss */
+  /* line 190, ../scss/main.scss */
   html, body {
     font-size: 20px;
     line-height: 30px;
   }
 
-  /* line 190, ../scss/main.scss */
+  /* line 195, ../scss/main.scss */
   .submit {
     font-size: 22px;
   }
 
-  /* line 194, ../scss/main.scss */
+  /* line 199, ../scss/main.scss */
   .congratstext p {
     font-size: 24px;
     line-height: 42px;
   }
 
-  /* line 199, ../scss/main.scss */
+  /* line 204, ../scss/main.scss */
   h2 {
     font-size: 40px;
     line-height: 32px;
   }
-}
-@media (max-width: 500px) {
-  /* line 206, ../scss/main.scss */
-  html, body {
-    font-size: 16px;
-    line-height: 24px;
+
+  /* line 209, ../scss/main.scss */
+  .input {
+    height: 68px;
   }
 
-  /* line 211, ../scss/main.scss */
+  /* line 214, ../scss/main.scss */
+  .cookies img {
+    max-height: 40vh !important;
+  }
+
+  /* line 220, ../scss/main.scss */
+  .cookies img {
+    max-height: 34vh !important;
+  }
+}
+@media (max-width: 500px) {
+  /* line 227, ../scss/main.scss */
+  html, body {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  /* line 232, ../scss/main.scss */
   .congratstext p {
     font-size: 20px;
     line-height: 34px;
   }
 
-  /* line 216, ../scss/main.scss */
+  /* line 237, ../scss/main.scss */
   h2 {
     font-size: 32px;
     line-height: 26px;
+  }
+
+  /* line 242, ../scss/main.scss */
+  .input {
+    height: 56px;
+  }
+}
+@media (max-height: 800px) {
+  /* line 248, ../scss/main.scss */
+  html, body {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  /* line 254, ../scss/main.scss */
+  .cookies img {
+    max-height: 40vh !important;
+  }
+}
+@media (max-height: 680px) {
+  /* line 261, ../scss/main.scss */
+  html, body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* line 267, ../scss/main.scss */
+  .cookies img {
+    max-height: 34vh !important;
+  }
+
+  /* line 272, ../scss/main.scss */
+  .submit {
+    height: 68px;
   }
 }

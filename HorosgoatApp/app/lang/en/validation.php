@@ -42,20 +42,20 @@ return array(
 	"max"                  => array(
 		"numeric" => "The :attribute may not be greater than :max.",
 		"file"    => "The :attribute may not be greater than :max kilobytes.",
-		"string"  => "The :attribute may not be greater than :max characters.",
+		"string"  => "Twittername is max 15 chars, or your date is wrong.",
 		"array"   => "The :attribute may not have more than :max items.",
 	),
 	"mimes"                => "The :attribute must be a file of type: :values.",
 	"min"                  => array(
 		"numeric" => "The :attribute must be at least :min.",
 		"file"    => "The :attribute must be at least :min kilobytes.",
-		"string"  => "The :attribute must be at least :min characters.",
+		"string"  => "Twittername is min 2 chars.",
 		"array"   => "The :attribute must have at least :min items.",
 	),
 	"not_in"               => "The selected :attribute is invalid.",
 	"numeric"              => "The :attribute must be a number.",
 	"regex"                => "The :attribute format is invalid.",
-	"required"             => "The :attribute field is required.",
+	"required"             => "We need both your name & date of birth.",
 	"required_if"          => "The :attribute field is required when :other is :value.",
 	"required_with"        => "The :attribute field is required when :values is present.",
 	"required_with_all"    => "The :attribute field is required when :values is present.",
@@ -68,7 +68,7 @@ return array(
 		"string"  => "The :attribute must be :size characters.",
 		"array"   => "The :attribute must contain :size items.",
 	),
-	"unique"               => "The :attribute has already been taken.",
+	"unique"               => "Naughty naughty! You can only have one cookie!",
 	"url"                  => "The :attribute format is invalid.",
 
 	/*
