@@ -1,16 +1,10 @@
 <?php
 
-use Illuminate\Auth\UserTrait;
-use Illuminate\Auth\UserInterface;
-use Illuminate\Auth\Reminders\RemindableTrait;
-use Illuminate\Auth\Reminders\RemindableInterface;
-
-class User extends Eloquent implements UserInterface, RemindableInterface{
-
-	use Usertrait, RemindableTrait;
+class Fortune extends \Eloquent {
 
 	//DB table used by model:
 	protected $table = "fortunes";
+	//protected $fillable = ['fortune'];
 
 	protected $hidden = [];
 }
