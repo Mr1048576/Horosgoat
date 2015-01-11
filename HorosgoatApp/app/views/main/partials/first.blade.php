@@ -13,5 +13,5 @@
 </div>
 
 <div class="givecookie">
-	<button class="button submit">Give me my cookie!</button>
+	<button class="button">Give me my cookie!</button>
 </div>

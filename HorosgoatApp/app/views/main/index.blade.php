@@ -17,7 +17,7 @@
 	</div>	
 
 	@if(isset($twittername))
-	<div class="main congrats">
+	<div class="main congrats" id="third">
 		@include('main.partials.third')
 	</div>
 	@endif

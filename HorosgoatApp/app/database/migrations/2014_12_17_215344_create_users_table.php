@@ -15,8 +15,8 @@ class CreateUsersTable extends Migration {
 		Schema::create('users', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string("twittername", 15)->unique();
-			$table->date("dateofbirth");
+			$table->string("twittername", 16)->unique();
+			$table->string("dateofbirth", 10);
 			$table->timestamps();
 		});
 	}

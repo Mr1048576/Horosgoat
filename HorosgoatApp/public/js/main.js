@@ -23,9 +23,9 @@ $(function(){
 		});
 	}
 
-	if($("#third") || $(".error").is(":empty") == false){
-		//$(document).scrollTop($(document).height());
+	if($("#third").length > 0){
+		$(document).scrollTop($(document).height());
 	}
 
-	$(".error").width($(".error").next().width());
+	$(".error").width($(".input").width());
 });

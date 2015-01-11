@@ -22,9 +22,9 @@ $inputgrey : #f2e7da;
 html,body{
 	font-family: "opensans", "Open Sans";
 	text-align: center;
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 400;
-	line-height: 36px;
+	line-height: 32px;
 }
 
 html{
@@ -72,7 +72,7 @@ span{
 .cookies{
 	img{
 		max-width: 100%;
-		height: 48vh;
+		height: 42vh;
 	}
 }
 
@@ -93,15 +93,21 @@ span{
 }
 
 .button, .submit{
+	font-size: 28px;
 	color: $white;
 	background-color: $blue;
 	border: 0;
 	border-radius: 5px;
 	text-transform: uppercase;
 	font-weight: bold;
+	width: 360px;
+	height: 76px;
+	font-family: "opensansbold";
+}
+
+.submit{
 	width: 406px;
 	height: 82px;
-	font-family: "opensansbold";
 }
 
 .submit{
@@ -125,14 +131,12 @@ span{
 }
 
 .givecookie{
-	margin-top: .2em;
+	margin-top: .6em;
 }
 
 .twitterdiv{
 	padding-top: 36vh;
 }
-
-
 
 .congratstext{
 	padding-top: 20vh;
@@ -175,8 +179,11 @@ h2{
 }
 
 .error{
+	font-family: "opensansbold";
 	font-size: 32px;
+	line-height: 36px;
 	margin: 0 auto;
+	text-shadow: 1px 1px 1px $black;
 }
 
 @media(max-width: 767px){
@@ -218,8 +225,8 @@ h2{
 
 @media(max-width: 500px){
 	html, body{
-		font-size: 16px;
-		line-height: 24px;
+		font-size: 20px;
+		line-height: 26px;
 	}
 
 	.congratstext p{

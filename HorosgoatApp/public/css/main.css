@@ -8047,9 +8047,9 @@ button.close {
 html, body {
   font-family: "opensans", "Open Sans";
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 32px;
 }
 
 /* line 30, ../scss/main.scss */
@@ -8106,7 +8106,7 @@ span {
 /* line 73, ../scss/main.scss */
 .cookies img {
   max-width: 100%;
-  height: 48vh;
+  height: 42vh;
 }
 
 /* line 79, ../scss/main.scss */
@@ -8129,56 +8129,63 @@ span {
 
 /* line 95, ../scss/main.scss */
 .button, .submit {
+  font-size: 28px;
   color: #fffdf9;
   background-color: #13a89e;
   border: 0;
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: bold;
-  width: 406px;
-  height: 82px;
+  width: 360px;
+  height: 76px;
   font-family: "opensansbold";
 }
 
-/* line 107, ../scss/main.scss */
+/* line 108, ../scss/main.scss */
+.submit {
+  width: 406px;
+  height: 82px;
+}
+
+/* line 113, ../scss/main.scss */
 .submit {
   font-size: 28px;
   max-width: 90%;
 }
 
-/* line 112, ../scss/main.scss */
+/* line 118, ../scss/main.scss */
 .button:hover, .submit:hover {
   color: #363636;
   background-color: #f6cb51;
 }
 
-/* line 117, ../scss/main.scss */
+/* line 123, ../scss/main.scss */
 .text {
   padding-top: 8vh;
   padding-left: 5%;
   padding-right: 5%;
 }
 
-/* line 123, ../scss/main.scss */
+/* line 129, ../scss/main.scss */
 .logo {
   margin-top: 2em;
 }
 
-/* line 127, ../scss/main.scss */
+/* line 133, ../scss/main.scss */
 .givecookie {
-  margin-top: .2em;
+  margin-top: .6em;
 }
 
-/* line 131, ../scss/main.scss */
+/* line 137, ../scss/main.scss */
 .twitterdiv {
   padding-top: 36vh;
 }
 
-/* line 137, ../scss/main.scss */
+/* line 141, ../scss/main.scss */
 .congratstext {
   padding-top: 20vh;
 }
-/* line 139, ../scss/main.scss */
+/* line 143, ../scss/main.scss */
 .congratstext p {
   color: #f2e7da;
   font-size: 30px;
@@ -8189,7 +8196,7 @@ span {
   margin-right: auto;
 }
 
-/* line 150, ../scss/main.scss */
+/* line 154, ../scss/main.scss */
 h2 {
   font-family: "opensansbold";
   text-transform: uppercase;
@@ -8200,7 +8207,7 @@ h2 {
   margin-top: 24vh;
 }
 
-/* line 160, ../scss/main.scss */
+/* line 164, ../scss/main.scss */
 .congrats {
   background: #363636 url(../img/lastbg.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -8210,7 +8217,7 @@ h2 {
   height: 100vh;
 }
 
-/* line 169, ../scss/main.scss */
+/* line 173, ../scss/main.scss */
 .toolate {
   color: #fffdf9;
   font-size: 50px;
@@ -8219,100 +8226,103 @@ h2 {
   height: 100vh;
 }
 
-/* line 177, ../scss/main.scss */
+/* line 181, ../scss/main.scss */
 .error {
+  font-family: "opensansbold";
   font-size: 32px;
+  line-height: 36px;
   margin: 0 auto;
+  text-shadow: 1px 1px 1px #363636;
 }
 
 @media (max-width: 767px) {
-  /* line 183, ../scss/main.scss */
+  /* line 190, ../scss/main.scss */
   html, body {
     font-size: 20px;
     line-height: 30px;
   }
 
-  /* line 188, ../scss/main.scss */
+  /* line 195, ../scss/main.scss */
   .submit {
     font-size: 22px;
   }
 
-  /* line 192, ../scss/main.scss */
+  /* line 199, ../scss/main.scss */
   .congratstext p {
     font-size: 24px;
     line-height: 42px;
   }
 
-  /* line 197, ../scss/main.scss */
+  /* line 204, ../scss/main.scss */
   h2 {
     font-size: 40px;
     line-height: 32px;
   }
 
-  /* line 202, ../scss/main.scss */
+  /* line 209, ../scss/main.scss */
   .input {
     height: 68px;
   }
 
-  /* line 207, ../scss/main.scss */
+  /* line 214, ../scss/main.scss */
   .cookies img {
     max-height: 40vh !important;
   }
 
-  /* line 213, ../scss/main.scss */
+  /* line 220, ../scss/main.scss */
   .cookies img {
     max-height: 34vh !important;
   }
 }
 @media (max-width: 500px) {
-  /* line 220, ../scss/main.scss */
+  /* line 227, ../scss/main.scss */
   html, body {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
-  /* line 225, ../scss/main.scss */
+  /* line 232, ../scss/main.scss */
   .congratstext p {
     font-size: 20px;
     line-height: 34px;
   }
 
-  /* line 230, ../scss/main.scss */
+  /* line 237, ../scss/main.scss */
   h2 {
     font-size: 32px;
     line-height: 26px;
   }
 
-  /* line 235, ../scss/main.scss */
+  /* line 242, ../scss/main.scss */
   .input {
     height: 56px;
   }
 }
 @media (max-height: 800px) {
-  /* line 241, ../scss/main.scss */
+  /* line 248, ../scss/main.scss */
   html, body {
     font-size: 20px;
     line-height: 30px;
   }
 
-  /* line 247, ../scss/main.scss */
+  /* line 254, ../scss/main.scss */
   .cookies img {
     max-height: 40vh !important;
   }
 }
 @media (max-height: 680px) {
-  /* line 254, ../scss/main.scss */
+  /* line 261, ../scss/main.scss */
   html, body {
     font-size: 16px;
     line-height: 24px;
   }
 
-  /* line 260, ../scss/main.scss */
+  /* line 267, ../scss/main.scss */
   .cookies img {
     max-height: 34vh !important;
   }
 
-  /* line 265, ../scss/main.scss */
+  /* line 272, ../scss/main.scss */
   .submit {
     height: 68px;
   }

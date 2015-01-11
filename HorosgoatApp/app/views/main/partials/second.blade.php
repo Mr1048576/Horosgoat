@@ -9,14 +9,14 @@
 
 	<div class="datediv">
 		
-		{{ Form::input("date", "dateofbirth", null, ["placeholder" => "Select date of birth", "class" => "input dateinput bold", "id" => "date"]) }}
+		{{ Form::input("text", "dateofbirth", null, ["placeholder" => "dd/mm/yyyy", "class" => "input dateinput bold", "id" => "date", "onkeypress" => "return event.charCode >= 47 && event.charCode <= 57"]) }}
 		
 	</div>
 
 	<div class="submitdiv">
 		{{ Form::submit("Where is my cookie?", ["class" => "submit"]) }}
-		<p class="red error">{{ $errors->first("twittername") }}</p>
-		<p class="red error">{{ $errors->first("dateofbirth") }}</p>
+		<p class="blue error">{{ $errors->first("twittername") }}</p>
+		<p class="blue error">{{ $errors->first("dateofbirth") }}</p>
 
 	</div>
 

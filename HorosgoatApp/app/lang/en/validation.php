@@ -42,14 +42,14 @@ return array(
 	"max"                  => array(
 		"numeric" => "The :attribute may not be greater than :max.",
 		"file"    => "The :attribute may not be greater than :max kilobytes.",
-		"string"  => "Twittername is max 15 chars.",
+		"string"  => "Twittername is max 15 chars, or your date is wrong.",
 		"array"   => "The :attribute may not have more than :max items.",
 	),
 	"mimes"                => "The :attribute must be a file of type: :values.",
 	"min"                  => array(
 		"numeric" => "The :attribute must be at least :min.",
 		"file"    => "The :attribute must be at least :min kilobytes.",
-		"string"  => "A Twittername is at least 2 characters.",
+		"string"  => "Twittername is min 2 chars.",
 		"array"   => "The :attribute must have at least :min items.",
 	),
 	"not_in"               => "The selected :attribute is invalid.",

@@ -40,10 +40,10 @@ class GoatController extends \BaseController {
 		$input = Input::all();
 
 		if($this->user->fill($input)->isValid()){
-			$testdate = Input::get("dateofbirth");
+			/*$testdate = Input::get("dateofbirth");
 			$validdash = ["-"];
-
-			if(!ctype_alnum(str_replace($validdash, "", $testdate))){
+*/
+			/*if(!ctype_alnum(str_replace($validdash, "", $testdate))){
 				$testdate = substr($testdate, 4);
 				$day = substr($testdate, 4, 2);
 				$month = substr($testdate, 0, 3);
@@ -90,7 +90,9 @@ class GoatController extends \BaseController {
 				$this->user->dateofbirth = $testdate;
 			}else{
 				$this->user->dateofbirth = Input::get("dateofbirth");
-			}
+			}*/
+
+			$this->user->dateofbirth = Input::get("dateofbirth");
 			
 			$this->user->save();
 
