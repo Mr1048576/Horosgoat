@@ -94,7 +94,7 @@ class GoatController extends \BaseController {
 			
 			$this->user->save();
 
-			return View::make("main.show", ["twittername" => $this->user->twittername]);
+			return View::make("main.index", ["twittername" => $this->user->twittername, "currentdate" => date("d")]);
 		}else{
 			return Redirect::back()->withInput()->withErrors($this->user->errors);
 		}
@@ -112,7 +112,7 @@ class GoatController extends \BaseController {
 	 */
 	public function show($twittername)
 	{
-		return View::make("main.show", ["twittername" => $twittername]);
+		//return View::make("main.show", ["twittername" => $twittername]);
 	}
 
 }
