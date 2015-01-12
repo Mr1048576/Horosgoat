@@ -16,7 +16,11 @@
 	<div class="submitdiv">
 		{{ Form::submit("Where is my cookie?", ["class" => "submit"]) }}
 		<p class="blue error">{{ $errors->first("twittername") }}</p>
-		<p class="blue error">{{ $errors->first("dateofbirth") }}</p>
+		<p class="blue error">{{ $errors->first("dateofbirth") }}</p><!-- 
+		@if(isset($wrongtwitter))
+			<p class="blue error">{{ $wrongtwitter }}</p>
+			<p>Testing testing, is this thing on?</p>
+		@endif -->
 
 	</div>
 

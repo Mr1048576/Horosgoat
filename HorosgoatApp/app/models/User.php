@@ -13,7 +13,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface{
 	//set up registration rules:
 	public static $rules = [
 		"twittername" => "required|max:16|min:2|unique:users",
-		"dateofbirth" => "required"
+		"dateofbirth" => "required|max:10|min:6"
 	];
 
 	public $errors;

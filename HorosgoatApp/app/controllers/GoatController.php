@@ -39,6 +39,33 @@ class GoatController extends \BaseController {
 	{
 		$input = Input::all();
 
+		$twittername = Input::get("twittername");
+
+		//$wrong["twittername"] = "Not a valid Twitter name.";
+
+		function isvalidname($name){
+			if(preg_match('/^[A-Za-z0-9_]{1,15}$/', substr($name, 1)) == false || strpos($name, "@") != 0){
+				return false;
+			}
+			return true;
+		}
+
+		function isvaliddate($validday, $validmonth){
+			if($validday > 31 || $validday < 1 || $validmonth > 12 || $validmonth < 1){
+				return false;
+			}
+			return true;
+		}
+
+		$dateofbirth = Input::get("dateofbirth");
+
+		$day = substr($dateofbirth, 0, 2);
+		$month = substr($dateofbirth, strpos($dateofbirth, "/") + 1, 2);
+
+		if(isvalidname($twittername) == false || isvaliddate($day, $month) == false){
+			return Redirect::back()->withInput()/*->with("wrongtwitter", $wrong["twittername"])*/;
+		}
+
 		if($this->user->fill($input)->isValid()){
 			/*$testdate = Input::get("dateofbirth");
 			$validdash = ["-"];
@@ -92,7 +119,7 @@ class GoatController extends \BaseController {
 				$this->user->dateofbirth = Input::get("dateofbirth");
 			}*/
 
-			$this->user->dateofbirth = Input::get("dateofbirth");
+			$this->user->dateofbirth = $dateofbirth;
 			
 			$this->user->save();
 
@@ -104,6 +131,11 @@ class GoatController extends \BaseController {
 		return Redirect::to("/");
 
 	}
+
+	/*public function validate_username($username)
+	{
+	    return preg_match('/^[A-Za-z0-9_]{1,15}$/', $username);
+	}*/
 
 
 	/**
